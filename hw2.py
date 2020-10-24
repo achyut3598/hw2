@@ -30,17 +30,11 @@ pos = length.index(max(length))
 hostname = socket.gethostname()
 ip = socket.gethostbyname(hostname)
 with open(new_path+'result.txt','a') as file:
-            file.write("Total number of words %s \n" % grand_total) 
-            file.write("The biggest file is %s with %s words \n" % (files[pos], length[pos]))
-            file.write("The ip address is %s \n" % ip)
-            file.close()
+    file.write("Total number of words %s \n" % grand_total) 
+    file.write("The biggest file is %s with %s words \n" % (files[pos], length[pos]))
+    file.write("The ip address is %s \n" % ip)
+    file.close()
 
 read_file = open (new_path+'result.txt',"r")
 strings = read_file.read()
 print (strings)
-
-    
-    
-"""with open(new_path+'\\ciphertext.txt','w') as file:
-            file.write(cipher)
-            file.close()"""
